@@ -16,7 +16,7 @@ print(products)
 total_amount = re.findall("ИТОГО:\n([\d\s]*,\d{2})", text)
 print(total_amount)
 
-#4
+#4 
 datetime_match = re.findall("Время:\s(.+)", text)
 print(datetime_match)
 
