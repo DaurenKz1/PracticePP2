@@ -1,31 +1,33 @@
 import pygame
 import datetime
 
-CENTER = (250, 200)
+CENTER = (250, 220)
 
-right_hand_img = pygame.image.load("images/right_hand.png")
-left_hand_img = pygame.image.load("images/left_hand.png")
+left_hand_img = None
+right_hand_img = None
 
-right_hand_img = pygame.transform.scale(right_hand_img, (40, 160))
-left_hand_img = pygame.transform.scale(left_hand_img, (30, 220))
+
+def load_images():
+    global left_hand_img, right_hand_img
+
+    left_hand_img = pygame.image.load("images/left.png").convert_alpha()
+    right_hand_img = pygame.image.load("images/right.png").convert_alpha()
+
+    left_hand_img = pygame.transform.scale(left_hand_img, (60, 240))  
+    right_hand_img = pygame.transform.scale(right_hand_img, (70, 160)) 
 
 
 def get_time_angles():
     now = datetime.datetime.now()
-    seconds = now.second
-    minutes = now.minute
-
-    sec_angle = seconds * 6
-    min_angle = minutes * 6
-
-    return sec_angle, min_angle
+    return now.second * 6, now.minute * 6
 
 
 def draw_hands(screen):
     sec_angle, min_angle = get_time_angles()
 
-    left_hand = pygame.transform.rotate(left_hand_img, -sec_angle)   
-    right_hand = pygame.transform.rotate(right_hand_img, -min_angle) 
+    left_hand = pygame.transform.rotate(left_hand_img, -sec_angle)
+    right_hand = pygame.transform.rotate(right_hand_img, -min_angle)
+
     left_rect = left_hand.get_rect(center=CENTER)
     right_rect = right_hand.get_rect(center=CENTER)
 
