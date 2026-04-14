@@ -13,7 +13,6 @@ class Ball:
         new_x = self.x + dx
         new_y = self.y + dy
 
-        # 🔥 проверка границ
         if RADIUS <= new_x <= screen_width - RADIUS:
             self.x = new_x
 

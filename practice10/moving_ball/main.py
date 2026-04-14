@@ -9,7 +9,6 @@ pygame.display.set_caption("Moving Ball")
 
 clock = pygame.time.Clock()
 
-# центр экрана
 ball = Ball(WIDTH // 2, HEIGHT // 2)
 
 done = False
@@ -32,7 +31,7 @@ while not done:
             if event.key == pygame.K_DOWN:
                 ball.move(0, STEP, WIDTH, HEIGHT)
 
-    screen.fill((255, 255, 255))  # белый фон
+    screen.fill((255, 255, 255))  
     ball.draw(screen)
 
     pygame.display.flip()
