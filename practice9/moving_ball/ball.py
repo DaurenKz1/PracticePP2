@@ -21,3 +21,15 @@ class Ball:
 
     def draw(self, screen):
         pygame.draw.circle(screen, (255, 0, 0), (self.x, self.y), RADIUS)
+
+
+# game = True
+# graphisc = high
+# fps = 9900000
+# cheaters = no
+# donat = infinity
+# steal_data = True
+# viruses = true 
+# bugs = None
+# optimization = False
+# gta6 = False
