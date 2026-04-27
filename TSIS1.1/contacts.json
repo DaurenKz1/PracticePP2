@@ -1,0 +1,47 @@
+[
+    {
+        "first_name": "Ronaldo",
+        "last_name": "Mbappepovich",
+        "email": "w@gmail.com",
+        "birthday": "2001-12-05",
+        "group": "black",
+        "phone": "-7777777",
+        "type": "home"
+    },
+    {
+        "first_name": "Batyrkhan",
+        "last_name": "Maukeev",
+        "email": "issakhanmb@gmail.com",
+        "birthday": "2005-03-15",
+        "group": "Family",
+        "phone": "87071234567",
+        "type": "mobile"
+    },
+    {
+        "first_name": "Alsu",
+        "last_name": "Issakova",
+        "email": "alsu@mail.com",
+        "birthday": "2004-07-21",
+        "group": "Friends",
+        "phone": "87075554433",
+        "type": "home"
+    },
+    {
+        "first_name": "Dauren",
+        "last_name": "Johnson",
+        "email": "dauren@gmail.com",
+        "birthday": "2003-11-02",
+        "group": "Work",
+        "phone": "87079998877",
+        "type": "work"
+    },
+    {
+        "first_name": "Mariam",
+        "last_name": "Jazken",
+        "email": "mariam@yahoo.com",
+        "birthday": "2005-01-10",
+        "group": "Friends",
+        "phone": "87076667788",
+        "type": "mobile"
+    }
+]
